@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <canvas class="c" width="800" height="600" style="border: 1px solid #000"></canvas>
-  <script src="./gl-matrix.js"></script>
-  <script src="./webgl.js"></script>
-  <script>
-    const canvas = document.querySelector('.c')
-    const gl = initWebGL(canvas);
-
-    initViewport(gl, canvas);
-
-    initMatrices(canvas);
-
-    initShader(gl);
-
-    draw(gl, createSquare(gl));
-  </script>
-</body>
-
+  <body>
+    <canvas class="c" width="800" height="600" style="border: 1px solid #000"></canvas>
+    <script type="module" src="./src/index.ts"></script>
+    <img src="https://clkj-online.oss-accelerate.aliyuncs.com/official-material/SVG/42b5259d-0bdc-4f81-a5f1-5ddac35d575d.svg" alt="" />
+  </body>
 </html>
